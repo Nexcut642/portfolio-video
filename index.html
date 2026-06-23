@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexcut — Freelance Video Editor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ═══ NAVIGATION ═══ -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">Nexcut<span class="accent">.</span></div>
+    <ul class="nav__links">
+      <li><a href="#projets">Projects</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#process">Workflow</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav__cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+      Let's work together
+    </button>
+    <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" id="accueil">
+    <div class="hero__timeline-bar"></div>
+    <div class="hero__content">
+      <!-- Réponse immédiate à : "C'est qui Nexcut ?" -->
+      <p class="hero__eyebrow">Ethan Francisco — Freelance Video Editor</p>
+      <h1 class="hero__title">
+        Turning your<br />
+        raw <span class="accent">footage</span> into<br />
+        stories that <span class="accent">stick.</span>
+      </h1>
+      <p class="hero__sub">
+        High-retention YouTube editing · Dynamic Short-form · Color Grading<br />
+        Crafting sharp, engaging videos tailored to capture your audience's attention.
+      </p>
+      <div class="hero__actions">
+        <button class="btn btn--primary" onclick="document.getElementById('projets').scrollIntoView({behavior:'smooth'})">
+          View my portfolio
+        </button>
+        <button class="btn btn--ghost" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+          Get in touch
+        </button>
+      </div>
+    </div>
+    <div class="hero__reel">
+      <div class="reel__frame open-lightbox" data-video="https://www.w3schools.com/html/mov_bbb.mp4">
+        <div class="reel__placeholder">
+          <div class="reel__play">▶</div>
+          <p>Watch Showreel</p>
+        </div>
+        <div class="reel__badge">Coming Soon</div>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══ PROJETS (Placés en premier pour l'impact visuel) ═══ -->
+  <section class="section projets" id="projets">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__eyebrow">My work</p>
+        <h2 class="section__title">Projects</h2>
+      </div>
+      <div class="projets__filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="longform">YouTube Long-form</button>
+        <button class="filter-btn" data-filter="shortform">Short-form</button>
+        <button class="filter-btn" data-filter="creative">Cinematic / Creative</button>
+      </div>
+      <div class="projets__grid" id="projetsGrid">
+
+        <div class="projet-card open-lightbox" data-cat="longform" data-video="https://www.w3schools.com/html/mov_bbb.mp4">
+          <div class="projet-card__thumb">
+            <div class="projet-card__overlay">
+              <div class="projet-card__play">▶</div>
+            </div>
+            <div class="projet-card__img" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);"></div>
+          </div>
+          <div class="projet-card__info">
+            <span class="projet-card__cat">YouTube Video</span>
+            <h3>Content Concept Project</h3>
+            <p>Retention-driven long-form editing prototype focusing on fluid narrative and custom graphics.</p>
+          </div>
+        </div>
+
+        <div class="projet-card open-lightbox" data-cat="shortform" data-video="https://www.w3schools.com/html/movie.mp4">
+          <div class="projet-card__thumb">
+            <div class="projet-card__overlay">
+              <div class="projet-card__play">▶</div>
+            </div>
+            <div class="projet-card__img" style="background: linear-gradient(135deg, #2d1b00 0%, #5c3600 50%, #e8a020 100%);"></div>
+          </div>
+          <div class="projet-card__info">
+            <span class="projet-card__cat">Short-form Content</span>
+            <h3>Vertical Format Showcase</h3>
+            <p>Fast-paced editing using engaging typography, zoom transitions, and precise sound design sync.</p>
+          </div>
+        </div>
+
+        <div class="projet-card open-lightbox" data-cat="creative" data-video="https://www.w3schools.com/html/mov_bbb.mp4">
+          <div class="projet-card__thumb">
+            <div class="projet-card__overlay">
+              <div class="projet-card__play">▶</div>
+            </div>
+            <div class="projet-card__img" style="background: linear-gradient(135deg, #0a1a0a 0%, #1a3a1a 50%, #2d5a2d 100%);"></div>
+          </div>
+          <div class="projet-card__info">
+            <span class="projet-card__cat">Cinematic Edit</span>
+            <h3>Visual & Color Grading Practice</h3>
+            <p>In-depth color management exploration and atmosphere design using professional workflows.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SERVICES ═══ -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__eyebrow">What I do</p>
+        <h2 class="section__title">Services</h2>
+      </div>
+      <div class="services__grid">
+
+        <div class="service-card">
+          <div class="service-card__icon">✂️</div>
+          <h3>YouTube Long-form</h3>
+          <p>Pacing, retention-focused editing, and clean narrative structure. Keeping your viewers hooked from the intro to the end screen.</p>
+          <ul class="service-card__tags">
+            <li>DaVinci Resolve</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon">⚡</div>
+          <h3>Short-form Editing</h3>
+          <p>Fast-paced, high-energy edits for TikTok, Reels, and Shorts. Dynamic captions, sound effects, and seamless transitions.</p>
+          <ul class="service-card__tags">
+            <li>After Effects</li>
+            <li>DaVinci Resolve</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon">🎨</div>
+          <h3>Color Grading</h3>
+          <p>Giving your footage a cohesive, premium look. Crafting a specific visual identity that matches your brand's atmosphere.</p>
+          <ul class="service-card__tags">
+            <li>DaVinci Resolve</li>
+            <li>Custom Grading</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT ME (Placé stratégiquement après les preuves de ton talent) ═══ -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about__inner">
+        <div class="about__content">
+          <div class="section__header">
+            <p class="section__eyebrow">Behind the timeline</p>
+            <h2 class="section__title">About Me</h2>
+          </div>
+          <p class="about__text">
+            Hi, I'm Ethan Francisco. Under the name <strong>Nexcut</strong>, I help international creators and forward-thinking brands scale their audience retention through high-end post-production.
+          </p>
+          <p class="about__text">
+            I approach video editing not just as a mechanical tool, but as a strategic asset. By combining sharp, retention-driven long-form pacing with high-energy vertical motion graphics, I build experiences tailored to stand out across YouTube, TikTok, and Instagram Reels. 
+          </p>
+        </div>
+        <div class="about__box">
+          <div class="about__box-item">
+            <h4>Core Tech Stack</h4>
+            <p>DaVinci Resolve Studio · After Effects</p>
+          </div>
+          <div class="about__box-item">
+            <h4>Creative Focus</h4>
+            <p>High-Retention Narrative & Premium Visuals</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROCESSUS (WORKFLOW) ═══ -->
+  <section class="section process" id="process">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__eyebrow">Workflow</p>
+        <h2 class="section__title">How We Partner</h2>
+      </div>
+      <div class="process__grid">
+        <div class="process-card">
+          <span class="process__step">01</span>
+          <h3>Briefing & Strategy</h3>
+          <p>We jump on a brief session to align on your brand identity, pacing, target audience, and content goals.</p>
+        </div>
+        <div class="process-card">
+          <span class="process__step">02</span>
+          <h3>First Cut & Assembly</h3>
+          <p>I craft the narrative structure, sync the sync points, and build the foundation of your video.</p>
+        </div>
+        <div class="process-card">
+          <span class="process__step">03</span>
+          <h3>Polishing & Sound Design</h3>
+          <p>Adding custom visual assets, sound design layers, and premium color grading to make the edit pop.</p>
+        </div>
+        <div class="process-card">
+          <span class="process__step">04</span>
+          <h3>Review & Delivery</h3>
+          <p>We fine-tune the final details through frame-accurate feedback, delivering master-quality files on time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ STATS ═══ -->
+  <section class="stats">
+    <div class="container stats__grid">
+      <div class="stat">
+        <span class="stat__number" data-target="100">0</span>
+        <span class="stat__label">% Delivery On Time</span>
+      </div>
+      <div class="stat">
+        <span class="stat__number" data-target="24">0</span>
+        <span class="stat__label">Hours Avg Response Time</span>
+      </div>
+      <div class="stat">
+        <span class="stat__number" data-target="2">0</span>
+        <span class="stat__label">Industry Tools Mastered</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section class="section contact" id="contact">
+    <div class="container contact__inner">
+      <div class="contact__left">
+        <p class="section__eyebrow">Let's talk</p>
+        <h2 class="section__title">Start a<br /><span class="accent">project together.</span></h2>
+        <p class="contact__desc">Have an idea, a brief, or just want to discuss your content workflow? Drop me a message or email me directly at <a href="mailto:ethanfrancisco.pro@gmail.com" class="accent" style="text-decoration: none;">ethanfrancisco.pro@gmail.com</a> — I'll get back to you within 24h.</p>
+        <div class="contact__socials">
+          <a href="https://www.linkedin.com/in/ethan-francisco-9888a23b1" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
+        </div>
+      </div>
+      <div class="contact__right">
+        <form class="contact__form" action="https://formspree.io/f/xrewzpol" method="POST">
+          <div class="form-group">
+            <label for="nom">Name / Company</label>
+            <input type="text" name="name" id="nom" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="projet">Project Type</label>
+            <select name="project" id="projet">
+              <option value="">Select an option</option>
+              <option value="YouTube Long-form">YouTube Long-form</option>
+              <option value="Short-form Content">Short-form Content</option>
+              <option value="Color Grading">Color Grading</option>
+              <option value="Other / Full Package">Other / Full Package</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="4" placeholder="Describe your project, timeline, style..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__logo">Nexcut<span class="accent">.</span></p>
+      <p class="footer__copy">© 2026 Nexcut — Video Editor Portfolio. All rights reserved.</p>
+      <p class="footer__made">Built for Performance</p>
+    </div>
+  </footer>
+
+  <!-- ═══ LECTEUR POP-UP (LIGHTBOX) ═══ -->
+  <div class="video-lightbox" id="videoLightbox">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close player">×</button>
+    <div class="lightbox__container">
+      <video id="lightboxVideo" controls autoplay playsinline src=""></video>
+    </div>
+  </div>
+
+  <!-- ═══ EFFETS LIQUIDES (iOS LIQUID GLASS) ═══ -->
+  <div class="liquid-container">
+    <div class="liquid-blob blob-main"></div>
+    <div class="liquid-blob blob-sub"></div>
+  </div>
+
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: none;">
+    <defs>
+      <filter id="liquid-glass">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="18" result="blur" />
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 28 -10" result="goo" />
+        <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+      </filter>
+    </defs>
+  </svg>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
