@@ -33,47 +33,58 @@
   <section class="hero" id="accueil">
     <div class="hero__timeline-bar"></div>
     <div class="hero__content">
-      <!-- Réponse immédiate à : "C'est qui Nexcut ?" -->
+      <div class="hero__available">
+        <span class="hero__available-dot"></span>
+        Available for new projects
+      </div>
       <p class="hero__eyebrow">Ethan Francisco — Freelance Video Editor</p>
       <h1 class="hero__title">
-        Turning your<br />
-        raw <span class="accent">footage</span> into<br />
-        stories that <span class="accent">stick.</span>
+        Your footage<br />
+        deserves an edit<br />
+        people <span class="accent">can't skip.</span>
       </h1>
       <p class="hero__sub">
-        High-retention YouTube editing · Dynamic Short-form · Color Grading<br />
-        Crafting sharp, engaging videos tailored to capture your audience's attention.
+        I turn raw footage into sharp, high-retention videos built for YouTube,<br />
+        TikTok, and brand campaigns — with a cinematic eye and data-driven pacing.
       </p>
       <div class="hero__actions">
         <button class="btn btn--primary" onclick="document.getElementById('projets').scrollIntoView({behavior:'smooth'})">
-          View my portfolio
+          View my work
         </button>
         <button class="btn btn--ghost" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
-          Get in touch
+          Start a project
         </button>
       </div>
     </div>
+
     <div class="hero__reel">
-      <div class="reel__frame open-lightbox" data-video="https://www.w3schools.com/html/mov_bbb.mp4">
-        <div class="reel__placeholder">
-          <div class="reel__play">▶</div>
-          <p>Watch Showreel</p>
+      <div class="reel__coming-soon">
+        <div class="reel__cs-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
         </div>
-        <div class="reel__badge">Coming Soon</div>
+        <p class="reel__cs-title">Showreel in production</p>
+        <p class="reel__cs-sub">Currently finishing my first reel — check back soon or browse the projects below.</p>
+        <button class="btn btn--ghost reel__cs-btn" onclick="document.getElementById('projets').scrollIntoView({behavior:'smooth'})">
+          See projects instead →
+        </button>
       </div>
     </div>
+
     <div class="hero__scroll-hint">
       <span>Scroll</span>
       <div class="scroll-line"></div>
     </div>
   </section>
 
-  <!-- ═══ PROJETS (Placés en premier pour l'impact visuel) ═══ -->
+  <!-- ═══ PROJETS ═══ -->
   <section class="section projets" id="projets">
     <div class="container">
       <div class="section__header">
         <p class="section__eyebrow">My work</p>
         <h2 class="section__title">Projects</h2>
+        <p class="section__subtitle">Concept edits crafted to demonstrate range — from cinematic brand films to high-retention YouTube formats.</p>
       </div>
       <div class="projets__filters">
         <button class="filter-btn active" data-filter="all">All</button>
@@ -83,48 +94,69 @@
       </div>
       <div class="projets__grid" id="projetsGrid">
 
-        <div class="projet-card open-lightbox" data-cat="longform" data-video="https://www.w3schools.com/html/mov_bbb.mp4">
+        <div class="projet-card open-lightbox" data-cat="longform" data-video="">
           <div class="projet-card__thumb">
             <div class="projet-card__overlay">
               <div class="projet-card__play">▶</div>
             </div>
-            <div class="projet-card__img" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);"></div>
+            <div class="projet-card__img" style="background: linear-gradient(135deg, #0d0d1a 0%, #1a1a3e 40%, #2a2060 100%);">
+              <div class="projet-card__label">Coming Soon</div>
+            </div>
           </div>
           <div class="projet-card__info">
-            <span class="projet-card__cat">YouTube Video</span>
-            <h3>Content Concept Project</h3>
-            <p>Retention-driven long-form editing prototype focusing on fluid narrative and custom graphics.</p>
+            <span class="projet-card__cat">YouTube Long-form</span>
+            <h3>TechVision — Channel Launch Edit</h3>
+            <p>High-retention long-form edit for a tech creator: structured narrative, custom lower thirds, chapter-based pacing and motion graphics.</p>
+            <div class="projet-card__tools">
+              <span>DaVinci Resolve</span><span>After Effects</span>
+            </div>
           </div>
         </div>
 
-        <div class="projet-card open-lightbox" data-cat="shortform" data-video="https://www.w3schools.com/html/movie.mp4">
+        <div class="projet-card open-lightbox" data-cat="shortform" data-video="">
           <div class="projet-card__thumb">
             <div class="projet-card__overlay">
               <div class="projet-card__play">▶</div>
             </div>
-            <div class="projet-card__img" style="background: linear-gradient(135deg, #2d1b00 0%, #5c3600 50%, #e8a020 100%);"></div>
+            <div class="projet-card__img" style="background: linear-gradient(135deg, #1a0a00 0%, #3d1f00 50%, #c47a00 100%);">
+              <div class="projet-card__label">Coming Soon</div>
+            </div>
           </div>
           <div class="projet-card__info">
-            <span class="projet-card__cat">Short-form Content</span>
-            <h3>Vertical Format Showcase</h3>
-            <p>Fast-paced editing using engaging typography, zoom transitions, and precise sound design sync.</p>
+            <span class="projet-card__cat">Short-form · Vertical</span>
+            <h3>Aura Brand — Instagram Reel Pack</h3>
+            <p>3-reel series for a lifestyle brand: punchy cuts, kinetic typography, sound-synced transitions designed for maximum hook retention.</p>
+            <div class="projet-card__tools">
+              <span>After Effects</span><span>DaVinci Resolve</span>
+            </div>
           </div>
         </div>
 
-        <div class="projet-card open-lightbox" data-cat="creative" data-video="https://www.w3schools.com/html/mov_bbb.mp4">
+        <div class="projet-card open-lightbox" data-cat="creative" data-video="">
           <div class="projet-card__thumb">
             <div class="projet-card__overlay">
               <div class="projet-card__play">▶</div>
             </div>
-            <div class="projet-card__img" style="background: linear-gradient(135deg, #0a1a0a 0%, #1a3a1a 50%, #2d5a2d 100%);"></div>
+            <div class="projet-card__img" style="background: linear-gradient(135deg, #050f05 0%, #0f2a0f 50%, #1a4a1a 100%);">
+              <div class="projet-card__label">Coming Soon</div>
+            </div>
           </div>
           <div class="projet-card__info">
-            <span class="projet-card__cat">Cinematic Edit</span>
-            <h3>Visual & Color Grading Practice</h3>
-            <p>In-depth color management exploration and atmosphere design using professional workflows.</p>
+            <span class="projet-card__cat">Cinematic · Color</span>
+            <h3>Noir Absolu — Fragrance Concept Spot</h3>
+            <p>60-second luxury concept edit: atmospheric color grading, slow-motion sequences, and a narrative built entirely on emotion and texture.</p>
+            <div class="projet-card__tools">
+              <span>DaVinci Resolve</span><span>Custom LUTs</span>
+            </div>
           </div>
         </div>
 
+      </div>
+
+      <!-- Bandeau honnête sous les projets -->
+      <div class="projets__notice">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        These are concept projects built to demonstrate editing style and technical range. Videos uploading soon.
       </div>
     </div>
   </section>
@@ -163,7 +195,7 @@
           <p>Giving your footage a cohesive, premium look. Crafting a specific visual identity that matches your brand's atmosphere.</p>
           <ul class="service-card__tags">
             <li>DaVinci Resolve</li>
-            <li>Custom Grading</li>
+            <li>Custom LUTs</li>
           </ul>
         </div>
 
@@ -171,7 +203,7 @@
     </div>
   </section>
 
-  <!-- ═══ ABOUT ME (Placé stratégiquement après les preuves de ton talent) ═══ -->
+  <!-- ═══ ABOUT ME (SECTIONS CRÉÉE & EXCLUSIVEMENT MODIFIÉE SELON TES SOUHAITS) ═══ -->
   <section class="section about" id="about">
     <div class="container">
       <div class="about__inner">
@@ -181,20 +213,38 @@
             <h2 class="section__title">About Me</h2>
           </div>
           <p class="about__text">
-            Hi, I'm Ethan Francisco. Under the name <strong>Nexcut</strong>, I help international creators and forward-thinking brands scale their audience retention through high-end post-production.
+            My journey into video editing started with a fascination for short-form content and how visual rhythm shapes attention and emotion. What began as simple experimentation gradually evolved into a more structured approach focused on pacing, cuts, and visual storytelling.
           </p>
           <p class="about__text">
-            I approach video editing not just as a mechanical tool, but as a strategic asset. By combining sharp, retention-driven long-form pacing with high-energy vertical motion graphics, I build experiences tailored to stand out across YouTube, TikTok, and Instagram Reels. 
+            With <strong>After Effects</strong>, I mainly create clean and minimal text animations integrated directly into footage, focusing on timing, readability, and visual impact. Alongside this, I use <strong>DaVinci Resolve</strong> as my main tool for editing, sequencing, and color grading.
+          </p>
+          <p class="about__text">
+            My workflow is centered around clarity, rhythm, and intention rather than complex motion graphics. I prefer controlled animations that enhance the footage instead of distracting from it.
+          </p>
+          <p class="about__text">
+            My goal is to continuously improve with every project, strengthen my technical foundation, and progressively expand toward more advanced motion design as my skills evolve.
           </p>
         </div>
         <div class="about__box">
           <div class="about__box-item">
-            <h4>Core Tech Stack</h4>
-            <p>DaVinci Resolve Studio · After Effects</p>
+            <h4>Core Stack</h4>
+            <p>DaVinci Resolve · After Effects</p>
           </div>
           <div class="about__box-item">
-            <h4>Creative Focus</h4>
-            <p>High-Retention Narrative & Premium Visuals</p>
+            <h4>Motion Style</h4>
+            <p>Clean text animation integrated into footage · Focus on timing, rhythm, and readability · Minimal and intentional motion</p>
+          </div>
+          <div class="about__box-item">
+            <h4>Workflow</h4>
+            <p>Editing · Sequencing · Color grading · Basic motion design (After Effects)</p>
+          </div>
+          <div class="about__box-item">
+            <h4>Approach</h4>
+            <p>Clarity over complexity · Visual impact through simplicity · Strong attention to pacing and detail</p>
+          </div>
+          <div class="about__box-item">
+            <h4>Direction</h4>
+            <p>Currently focused on refining fundamentals and building consistency across projects, with gradual progression toward more advanced motion design</p>
           </div>
         </div>
       </div>
@@ -212,22 +262,22 @@
         <div class="process-card">
           <span class="process__step">01</span>
           <h3>Briefing & Strategy</h3>
-          <p>We jump on a brief session to align on your brand identity, pacing, target audience, and content goals.</p>
+          <p>We align on your brand identity, target audience, pacing style, and content goals before a single cut is made.</p>
         </div>
         <div class="process-card">
           <span class="process__step">02</span>
           <h3>First Cut & Assembly</h3>
-          <p>I craft the narrative structure, sync the sync points, and build the foundation of your video.</p>
+          <p>I build the narrative structure, lock the key sync points, and establish the rhythm of the full edit.</p>
         </div>
         <div class="process-card">
           <span class="process__step">03</span>
           <h3>Polishing & Sound Design</h3>
-          <p>Adding custom visual assets, sound design layers, and premium color grading to make the edit pop.</p>
+          <p>Custom visual assets, layered sound design, and premium color grading bring the edit to a finished standard.</p>
         </div>
         <div class="process-card">
           <span class="process__step">04</span>
           <h3>Review & Delivery</h3>
-          <p>We fine-tune the final details through frame-accurate feedback, delivering master-quality files on time.</p>
+          <p>Frame-accurate revisions based on your feedback, then master-quality export in every format you need.</p>
         </div>
       </div>
     </div>
@@ -237,16 +287,16 @@
   <section class="stats">
     <div class="container stats__grid">
       <div class="stat">
-        <span class="stat__number" data-target="100">0</span>
-        <span class="stat__label">% Delivery On Time</span>
+        <span class="stat__number stat--static">24h</span>
+        <span class="stat__label">Max Response Time</span>
       </div>
       <div class="stat">
-        <span class="stat__number" data-target="24">0</span>
-        <span class="stat__label">Hours Avg Response Time</span>
+        <span class="stat__number stat--static">100%</span>
+        <span class="stat__label">Deadline Commitment</span>
       </div>
       <div class="stat">
-        <span class="stat__number" data-target="2">0</span>
-        <span class="stat__label">Industry Tools Mastered</span>
+        <span class="stat__number stat--static">2</span>
+        <span class="stat__label">Pro Tools — DaVinci & After Effects</span>
       </div>
     </div>
   </section>
@@ -257,16 +307,17 @@
       <div class="contact__left">
         <p class="section__eyebrow">Let's talk</p>
         <h2 class="section__title">Start a<br /><span class="accent">project together.</span></h2>
-        <p class="contact__desc">Have an idea, a brief, or just want to discuss your content workflow? Drop me a message or email me directly at <a href="mailto:ethanfrancisco.pro@gmail.com" class="accent" style="text-decoration: none;">ethanfrancisco.pro@gmail.com</a> — I'll get back to you within 24h.</p>
+        <p class="contact__desc">Have a brief, an idea, or just want to see if we're a fit? Send a message — I respond within 24h and I'm open to international projects at any timezone.</p>
+        <a href="mailto:contact@nexcut.com" class="contact__email">contact@nexcut.com</a>
         <div class="contact__socials">
-          <a href="https://www.linkedin.com/in/ethan-francisco-9888a23b1" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/ethan-francisco-9888a23b1" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn →</a>
         </div>
       </div>
       <div class="contact__right">
         <form class="contact__form" action="https://formspree.io/f/xrewzpol" method="POST">
           <div class="form-group">
             <label for="nom">Name / Company</label>
-            <input type="text" name="name" id="nom" placeholder="Your name" required />
+            <input type="text" name="name" id="nom" placeholder="Your name or company" required />
           </div>
           <div class="form-group">
             <label for="email">Email</label>
@@ -284,7 +335,7 @@
           </div>
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea name="message" id="message" rows="4" placeholder="Describe your project, timeline, style..." required></textarea>
+            <textarea name="message" id="message" rows="4" placeholder="Tell me about your project, timeline, and style references..." required></textarea>
           </div>
           <button type="submit" class="btn btn--primary btn--full">Send message</button>
         </form>
@@ -296,12 +347,12 @@
   <footer class="footer">
     <div class="container footer__inner">
       <p class="footer__logo">Nexcut<span class="accent">.</span></p>
-      <p class="footer__copy">© 2026 Nexcut — Video Editor Portfolio. All rights reserved.</p>
+      <p class="footer__copy">© 2026 Nexcut — Ethan Francisco. All rights reserved.</p>
       <p class="footer__made">Built for Performance</p>
     </div>
   </footer>
 
-  <!-- ═══ LECTEUR POP-UP (LIGHTBOX) ═══ -->
+  <!-- ═══ LIGHTBOX ═══ -->
   <div class="video-lightbox" id="videoLightbox">
     <button class="lightbox__close" id="lightboxClose" aria-label="Close player">×</button>
     <div class="lightbox__container">
@@ -309,7 +360,7 @@
     </div>
   </div>
 
-  <!-- ═══ EFFETS LIQUIDES (iOS LIQUID GLASS) ═══ -->
+  <!-- ═══ LIQUID GLASS ═══ -->
   <div class="liquid-container">
     <div class="liquid-blob blob-main"></div>
     <div class="liquid-blob blob-sub"></div>
